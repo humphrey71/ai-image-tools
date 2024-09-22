@@ -1,8 +1,10 @@
+import type { Metadata } from "next"
+
 import Image from "next/image"
 
-export const metadata = {
-  title: 'typescript-website-template',
-  description: 'my typescript website template',
+export const metadata: Metadata = {
+  title: "Home page",
+  description: "This is the home page",
   alternates: {
     canonical: '/'
   }
