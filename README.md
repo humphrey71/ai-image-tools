@@ -1,3 +1,32 @@
+# typescript-website-template
+clone this template and start coding
+```bash
+mkdir my-website
+cd my-website
+git init
+git remote add template https://github.com/humphrey71/typescript-website-template.git
+git fetch template
+
+git branch -m template main
+git branch dev
+git checkout dev
+
+git remote add origin https://github.com/humphrey71/my-website.git
+git push -u origin main
+git push -u origin dev
+```
+
+install dependencies
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
