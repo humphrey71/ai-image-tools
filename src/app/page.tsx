@@ -1,4 +1,12 @@
-import Image from "next/image";
+import Image from "next/image"
+
+export const metadata = {
+  title: 'typescript-website-template',
+  description: 'my typescript website template',
+  alternates: {
+    canonical: '/'
+  }
+}
 
 export default function Home() {
   return (
@@ -97,5 +105,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  );
+  )
 }
