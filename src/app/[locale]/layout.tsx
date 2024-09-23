@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { routing } from "@/i18n/routing"
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, unstable_setRequestLocale } from "next-intl/server"
+import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import localFont from "next/font/local"
 
 import LanguageSwitcher from "@/components/language-switcher"
@@ -24,14 +24,17 @@ const geistMono = localFont({
   weight: "100 900",
 })
 
-export const generateMetadata = (): Metadata => {
+export const generateMetadata = async ({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> => {
+  const t = await getTranslations({ locale, namespace: 'site' })
+  const name = siteConfig.name(t)
+  const description = siteConfig.description(t)
   return {
     metadataBase: new URL(siteConfig.baseUrl),
     title: {
-      template: "%s | " + siteConfig.name,
-      default: siteConfig.name,
+      template: "%s | " + name,
+      default: name,
     },
-    description: siteConfig.description,
+    description: description,
     openGraph: {
       type: "website",
       images: [siteConfig.ogImage],

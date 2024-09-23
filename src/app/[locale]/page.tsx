@@ -1,16 +1,13 @@
 import type { Metadata } from "next"
 
-import Image from "next/image"
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from "next-intl/server"
-import { locales } from "@/i18n/routing"
+import Image from "next/image"
 
-export function generateMetadata(): Metadata {
-  const languages = Object.fromEntries(Object.keys(locales).map((locale) => ([locale, `/${locale}`])))
+export function generateMetadata({ params: { locale } }: { params: { locale: string } }): Metadata {
   return {
     alternates: {
-      canonical: '/',
-      languages: languages
+      canonical: `/${locale}`
     }
   }
 }

@@ -1,6 +1,6 @@
 export const siteConfig = {
-    name: "typescript-website-template",
-    description: "my typescript website template",
+    name: (t: (key: string) => string) => t('name'),
+    description: (t: (key: string) => string) => t('description'),
     baseUrl: "https://typescript-website-template.vercel.app",
     ogImage: "https://nextjs.org/icons/next.svg",
     links: {

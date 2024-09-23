@@ -1,4 +1,8 @@
 {
+  "site": {
+    "name": "Typescript Website Template",
+    "description": "my typescript website template"
+  },
   "index": {
     "title": "Hello world!",
     "get-started-by-editing": "Get started by editing",

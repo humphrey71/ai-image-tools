@@ -1,4 +1,8 @@
 {
+  "site": {
+    "name": "typescript 网站模板",
+    "description": "我的 typescript 网站模板"
+  },
   "index": {
     "title": "你好,世界!",
     "get-started-by-editing": "开始编辑",
