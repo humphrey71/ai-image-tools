@@ -68,11 +68,11 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
             enableSystem
             disableTransitionOnChange
           >
-            <header className="w-full flex gap-4 justify-end items-center p-4 bg-background/80 backdrop-blur-sm z-50">
+            <header className="w-full flex gap-4 justify-end items-center p-4 bg-background/80 backdrop-blur-sm z-50 border-b">
               <LanguageSwitcher />
               <ThemeToggle />
             </header>
-            <main className="pt-16">
+            <main className="container mx-auto p-4">
               {children}
             </main>
           </ThemeProvider>
