@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "Hello world!",
+    "get-started-by-editing": "Get started by editing",
+    "save-and-see-your-changes-instantly": "Save and see your changes instantly.",
+    "deploy-now": "Deploy now",
+    "read-our-docs": "Read our docs",
+    "learn": "Learn",
+    "examples": "Examples",
+    "go-to-nextjs-org": "Go to nextjs.org →",
+    "vercel-logomark": "Vercel logomark",
+    "file-icon": "File icon",
+    "window-icon": "Window icon",
+    "globe-icon": "Globe icon",
+    "next-js-logo": "Next.js logo"
+  }
+}

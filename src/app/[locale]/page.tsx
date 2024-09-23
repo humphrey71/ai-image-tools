@@ -1,36 +1,44 @@
 import type { Metadata } from "next"
 
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
+import { unstable_setRequestLocale } from "next-intl/server"
+import { locales } from "@/i18n/routing"
 
-export const metadata: Metadata = {
-  title: "Home page",
-  description: "This is the home page",
-  alternates: {
-    canonical: '/'
+export function generateMetadata(): Metadata {
+  const languages = Object.fromEntries(Object.keys(locales).map((locale) => ([locale, `/${locale}`])))
+  return {
+    alternates: {
+      canonical: '/',
+      languages: languages
+    }
   }
 }
 
-export default function Home() {
+export default function Home({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale)
+  const t = useTranslations('index')
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
           src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
+          alt={t('next-js-logo')}
           width={180}
           height={38}
           priority
         />
+        <h1>{t('title')}</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
-            Get started by editing{" "}
+            {t('get-started-by-editing')}{" "}
             <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
               src/app/page.tsx
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li>{t('save-and-see-your-changes-instantly')}</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
@@ -43,11 +51,11 @@ export default function Home() {
             <Image
               className="dark:invert"
               src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
+              alt={t('vercel-logomark')}
               width={20}
               height={20}
             />
-            Deploy now
+            {t('deploy-now')}
           </a>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
@@ -55,7 +63,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            {t('read-our-docs')}
           </a>
         </div>
       </main>
@@ -69,11 +77,11 @@ export default function Home() {
           <Image
             aria-hidden
             src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
+            alt={t('file-icon')}
             width={16}
             height={16}
           />
-          Learn
+          {t('learn')}
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -84,11 +92,11 @@ export default function Home() {
           <Image
             aria-hidden
             src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
+            alt={t('window-icon')}
             width={16}
             height={16}
           />
-          Examples
+          {t('examples')}
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -99,11 +107,11 @@ export default function Home() {
           <Image
             aria-hidden
             src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
+            alt={t('globe-icon')}
             width={16}
             height={16}
           />
-          Go to nextjs.org →
+          {t('go-to-nextjs-org')}
         </a>
       </footer>
     </div>

@@ -1,0 +1,17 @@
+{
+  "index": {
+    "title": "你好,世界!",
+    "get-started-by-editing": "开始编辑",
+    "save-and-see-your-changes-instantly": "保存并立即查看您的更改。",
+    "deploy-now": "立即部署",
+    "examples": "示例",
+    "go-to-nextjs-org": "前往 nextjs.org →",
+    "learn": "学习",
+    "read-our-docs": "阅读我们的文档",
+    "file-icon": "文件图标",
+    "globe-icon": "地球图标",
+    "next-js-logo": "Next.js 徽标",
+    "vercel-logomark": "Vercel 标志",
+    "window-icon": "窗口图标"
+  }
+}
