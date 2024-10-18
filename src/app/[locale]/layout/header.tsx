@@ -3,6 +3,7 @@ import Image from "next/image"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
+import { HeaderMenuComponent } from "./header-menu"
 
 export function Header() {
     const siteName = "Image Tools"
@@ -18,6 +19,8 @@ export function Header() {
                         <div className="text-xl font-bold">{siteName}</div>
                     </div>
                 </div>
+
+                <HeaderMenuComponent />
 
                 <div className="grow md:hidden"></div>
                 <div className="flex items-center gap-2">

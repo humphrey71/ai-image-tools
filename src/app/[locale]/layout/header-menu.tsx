@@ -36,65 +36,6 @@ export function HeaderMenuComponent() {
       href: "/image-generator",
       title: "Image Generator",
     },
-    {
-      title: "Image Editor",
-      subItems: [
-        {
-          href: "/crop",
-          title: "Crop",
-          icon: <Crop className="h-4 w-4" />,
-        },
-        {
-          href: "/resize",
-          title: "Resize",
-          icon: <PiResize className="h-4 w-4" />,
-        },
-        {
-          href: "/rotate",
-          title: "Rotate",
-          icon: <RotateCcw className="h-4 w-4" />,
-        },
-        {
-          href: "/flip",
-          title: "Flip",
-          icon: <FlipHorizontal className="h-4 w-4" />,
-        },
-        {
-          href: "/text",
-          title: "Text",
-          icon: <Text className="h-4 w-4" />,
-        },
-        {
-          href: "/sticker",
-          title: "Sticker",
-          icon: <Sticker className="h-4 w-4" />,
-        },
-        {
-          href: "/merge",
-          title: "Merge",
-          icon: <GiJoin className="h-4 w-4" />,
-        },
-        {
-          href: "/split",
-          title: "Split",
-          icon: <ScissorsLineDashed className="h-4 w-4" />,
-        },
-        {
-          href: "/convert",
-          title: "Convert",
-          icon: <FileDown className="h-4 w-4" />,
-        },
-        {
-          href: "/compress",
-          title: "Compress",
-          icon: <FileArchive className="h-4 w-4" />,
-        },
-      ]
-    },
-    {
-      href: "/blog",
-      title: "Blog",
-    },
   ]
 
 
