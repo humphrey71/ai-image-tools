@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Link, locales, usePathname } from '@/i18n/routing'
 
-export default function LanguageSwitcher() {
+export function LanguageSwitcher() {
     const locale = useLocale()
     const pathname = usePathname()
 

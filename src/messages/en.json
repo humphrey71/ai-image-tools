@@ -16,6 +16,135 @@
     "file-icon": "File icon",
     "window-icon": "Window icon",
     "globe-icon": "Globe icon",
-    "next-js-logo": "Next.js logo"
+    "next-js-logo": "Next.js logo",
+    "heroTitle": "Professional Online Image Editing, Made Simple",
+    "heroDescription": "Edit your images directly in your browser, no software download required",
+    "startEditing": "Start Editing",
+    "startEditingDescription": "Drop, paste, or click to choose an image file in the area below",
+    "toolsTitle": "Our Editing Tools",
+    "crop": "Crop & Resize",
+    "cropDescription": "Easily crop and resize your images",
+    "filter": "Filters & Effects",
+    "filterDescription": "Apply stunning filters and effects to your photos",
+    "adjust": "Adjust",
+    "adjustDescription": "Fine-tune brightness, contrast, and saturation",
+    "text": "Text & Stickers",
+    "textDescription": "Add text and stickers to your images",
+    "remove": "Remove Background",
+    "removeDescription": "Easily remove image backgrounds",
+    "retouch": "Retouch & Beautify",
+    "retouchDescription": "Enhance and beautify your photos",
+    "tryNow": "Try Now",
+    "featuresTitle": "Why Choose Us",
+    "features": {
+      "freeUse": {
+        "title": "Free to Use",
+        "description": "Use basic features without registration"
+      },
+      "cloudSave": {
+        "title": "Cloud Saving",
+        "description": "Save your editing history and projects after registration"
+      },
+      "multiDevice": {
+        "title": "Multi-Device Sync",
+        "description": "Continue your editing on any device"
+      },
+      "advancedFilters": {
+        "title": "Advanced Filters",
+        "description": "Unique filter effects to make your photos stand out"
+      },
+      "aiRetouch": {
+        "title": "AI Retouch",
+        "description": "One-click beautification with AI assistance"
+      },
+      "privacy": {
+        "title": "Privacy Protection",
+        "description": "All uploaded images are encrypted"
+      }
+    },
+    "faqTitle": "Frequently Asked Questions",
+    "faq": {
+      "howToStart": {
+        "question": "How do I start editing my first image?",
+        "answer": "Simply click the 'Start Editing' button, upload your image, and choose from our range of editing tools."
+      },
+      "mobileUse": {
+        "question": "Can I use this tool on my mobile phone?",
+        "answer": "Yes, our editor is fully responsive and works on all devices, including smartphones and tablets."
+      },
+      "imageQuality": {
+        "question": "Will the quality of my image decrease after editing?",
+        "answer": "We use advanced algorithms to maintain image quality. However, excessive editing may affect the final result."
+      },
+      "freePaidDifference": {
+        "question": "What's the difference between the free and paid versions?",
+        "answer": "The free version offers basic editing tools, while the paid version includes advanced features, cloud storage, and ad-free experience."
+      }
+    },
+    "ctaTitle": "Start Editing Your Images Now",
+    "ctaDescription": "Join thousands of users who trust our tool for their image editing needs"
+  },
+  "Compress": {
+    "title": "Image Compression",
+    "uploadImage": "Upload Image",
+    "compressionQuality": "Compression Quality: {quality}",
+    "compress": "Compress",
+    "compressing": "Compressing...",
+    "compressionError": "An error occurred during compression. Please try again.",
+    "original": "Original",
+    "compressed": "Compressed",
+    "size": "Size: {size} KB",
+    "download": "Download Compressed Image"
+  },
+  "ImageConverter": {
+    "selectImage": "Select Image",
+    "convert": "Convert",
+    "converting": "Converting...",
+    "download": "Download",
+    "original": "Original",
+    "converted": "Converted",
+    "size": "Size: {size} KB",
+    "unsupportedFormat": "Unsupported image format. Please use JPEG, PNG, WebP, or GIF.",
+    "canvasError": "Canvas context not available",
+    "conversionError": "Error during image conversion"
+  },
+  "CropEditor": {
+    "dropzoneText": "Drag and drop an image here, or click to open",
+    "properties": "Properties",
+    "crop": "Crop",
+    "property": "Property",
+    "originalValue": "Original Value",
+    "cropValue": "Crop Value",
+    "width": "Width",
+    "height": "Height",
+    "size": "Size",
+    "cropButton": "Crop Image",
+    "pasteImageUrl": "Paste image URL",
+    "loadImage": "Load Image",
+    "processingPaste": "Processing pasted content...",
+    "invalidImageUrl": "Invalid Image URL",
+    "pleaseEnterValidImageUrl": "Please enter a valid image URL",
+    "errorLoadingImage": "Error loading image",
+    "pleaseCheckUrlAndTryAgain": "Please check the URL and try again",
+    "preview": "Preview"
+  },
+  "Crop": {
+    "title": "Crop Tool"
+  },
+  "FilterPage": {
+    "title": "Image Filter"
+  },
+  "FilterEditor": {
+    "applyFilter": "Apply Filter"
+  },
+  "UploadArea": {
+    "dropToUpload": "Drop the image here...",
+    "dragDropOrClick": "Drag and drop an image here, or click to select",
+    "orPasteUrl": "Or paste an image URL"
+  },
+  "PropertiesTab": {
+    "properties": "Properties",
+    "originalImage": "Original Image",
+    "currentFilter": "Current Filter"
   }
 }

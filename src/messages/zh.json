@@ -16,6 +16,135 @@
     "globe-icon": "地球图标",
     "next-js-logo": "Next.js 徽标",
     "vercel-logomark": "Vercel 标志",
-    "window-icon": "窗口图标"
+    "window-icon": "窗口图标",
+    "heroTitle": "专业级在线图片编辑，简单易用",
+    "heroDescription": "无需下载软件，直接在浏览器中编辑你的图片",
+    "startEditing": "开始编辑",
+    "startEditingDescription": "通过拖放、粘贴或点击选择图像文件到下面的区域",
+    "toolsTitle": "我们的编辑工具",
+    "crop": "裁剪和调整大小",
+    "cropDescription": "轻松裁剪和调整图片尺寸",
+    "filter": "滤镜和效果",
+    "filterDescription": "为你的照片添加绚丽的滤镜和效果",
+    "adjust": "调整",
+    "adjustDescription": "微调亮度、对比度和饱和度",
+    "text": "文字和贴纸",
+    "textDescription": "为你的图片添加文字和贴纸",
+    "remove": "去除背景",
+    "removeDescription": "轻松去除图片背景",
+    "retouch": "修复和美化",
+    "retouchDescription": "增强和美化你的照片",
+    "tryNow": "立即尝试",
+    "featuresTitle": "为什么选择我们",
+    "features": {
+      "freeUse": {
+        "title": "免费使用",
+        "description": "无需注册即可使用基本功能"
+      },
+      "cloudSave": {
+        "title": "云端保存",
+        "description": "注册后可保存编辑历史和项目"
+      },
+      "multiDevice": {
+        "title": "多设备同步",
+        "description": "在任何设备上继续你的编辑"
+      },
+      "advancedFilters": {
+        "title": "高级滤镜",
+        "description": "独特的滤镜效果让你的照片脱颖而出"
+      },
+      "aiRetouch": {
+        "title": "AI智能修图",
+        "description": "AI辅助的一键美化功能"
+      },
+      "privacy": {
+        "title": "隐私保护",
+        "description": "所有上传的图片都经过加密处理"
+      }
+    },
+    "faqTitle": "常见问题",
+    "faq": {
+      "howToStart": {
+        "question": "如何开始编辑我的第一张图片？",
+        "answer": "只需点击\"开始编辑\"按钮，上传你的图片，然后从我们的编辑工具中选择即可。"
+      },
+      "mobileUse": {
+        "question": "我可以在手机上使用这个工具吗？",
+        "answer": "是的，我们的编辑器完全响应式，可以在所有设备上使用，包括智能手机和平板电脑。"
+      },
+      "imageQuality": {
+        "question": "编辑后的图片质量会下降吗？",
+        "answer": "我们使用先进的算法来保持图片质量。但是，过度编辑可能会影响最终结果。"
+      },
+      "freePaidDifference": {
+        "question": "免费版和付费版有什么区别？",
+        "answer": "免费版提供基本的编辑工具，而付费版包括高级功能、云存储和无广告体验。"
+      }
+    },
+    "ctaTitle": "立即开始编辑您的图像",
+    "ctaDescription": "加入成千上万信任我们工具的用户，满足你的图片编辑需求"
+  },
+  "Compress": {
+    "title": "图片压缩",
+    "uploadImage": "上传图片",
+    "compressionQuality": "压缩质量：{quality}",
+    "compress": "压缩",
+    "compressing": "压缩中...",
+    "compressionError": "压缩过程中发生错误。请重试。",
+    "original": "原图",
+    "compressed": "压缩后",
+    "size": "大小：{size} KB",
+    "download": "下载压缩后的图片"
+  },
+  "ImageConverter": {
+    "selectImage": "选择图片",
+    "convert": "转换",
+    "converting": "转换中...",
+    "download": "下载",
+    "original": "原图",
+    "converted": "转换后",
+    "size": "大小：{size} KB",
+    "unsupportedFormat": "不支持的图片格式。请使用 JPEG、PNG、WebP 或 GIF。",
+    "canvasError": "Canvas 上下文不可用",
+    "conversionError": "图片转换过程中出错"
+  },
+  "CropEditor": {
+    "dropzoneText": "拖放图片到此处，或点击打开",
+    "properties": "属性",
+    "crop": "裁剪",
+    "property": "属性",
+    "originalValue": "原始值",
+    "cropValue": "裁剪值",
+    "width": "宽度",
+    "height": "高度",
+    "size": "大小",
+    "cropButton": "裁剪图片",
+    "pasteImageUrl": "粘贴图片URL",
+    "loadImage": "加载图片",
+    "processingPaste": "正在处理粘贴内容...",
+    "invalidImageUrl": "无效的图片URL",
+    "pleaseEnterValidImageUrl": "请输入有效的图片URL",
+    "errorLoadingImage": "加载图片时出错",
+    "pleaseCheckUrlAndTryAgain": "请检查URL并重试",
+    "preview": "预览"
+  },
+  "Crop": {
+    "title": "裁剪工具"
+  },
+  "FilterPage": {
+    "title": "图片滤镜"
+  },
+  "FilterEditor": {
+    "applyFilter": "应用滤镜"
+  },
+  "UploadArea": {
+    "dropToUpload": "将图片拖放到这里...",
+    "dragDropOrClick": "拖放图片到这里，或点击选择",
+    "orPasteUrl": "或粘贴图片 URL"
+  },
+  "PropertiesTab": {
+    "properties": "属性",
+    "originalImage": "原始图片",
+    "currentFilter": "当前滤镜"
   }
 }

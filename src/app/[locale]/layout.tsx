@@ -1,14 +1,13 @@
 import type { Metadata } from "next"
 
-import { routing } from "@/i18n/routing"
 import { Analytics } from "@vercel/analytics/react"
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server"
 import localFont from "next/font/local"
 
-import LanguageSwitcher from "@/components/language-switcher"
+import { Header } from "./layout/header"
 import { ThemeProvider } from "@/components/theme-provider"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { routing } from "@/i18n/routing"
 import { siteConfig } from "@/site-config"
 
 import "../globals.css"
@@ -68,10 +67,7 @@ export default async function LocaleLayout({ children, params: { locale } }: { c
             enableSystem
             disableTransitionOnChange
           >
-            <header className="w-full flex gap-4 justify-end items-center p-4 bg-background/80 backdrop-blur-sm z-50 border-b">
-              <LanguageSwitcher />
-              <ThemeToggle />
-            </header>
+            <Header />
             <main className="container mx-auto p-4">
               {children}
             </main>
